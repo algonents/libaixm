@@ -5,6 +5,10 @@ plugins {
 group = "com.algonents.aixm"
 version = "0.1.0"
 
+kotlin {
+    jvmToolchain(21)
+}
+
 // JAXB code generation task
 val jaxbGenDir = layout.buildDirectory.dir("generated/sources/jaxb")
 
